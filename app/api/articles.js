@@ -7,6 +7,7 @@ const router = express.Router();
 
 router.post('/', function (req, res, next) {
   const data = req.body;
+  console.log(data);
   if (_.isEmpty(data)) {
     res.sendStatus(400);
   } else {
